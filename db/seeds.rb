@@ -6,3 +6,7 @@ jack = Employee.create!(name: "Jack Harlow", level: 1, department: sales)
 sally = Employee.create!(name: "Sally Jones", level: 2, department: sales)
 james = Employee.create!(name: "James Cornfield", level: 3, department: IT)
 rebecca = Employee.create!(name: "Rebecca Smith", level: 4, department: finance)
+
+ticket1 = jack.tickets.create!(subject: "random task 1", age: 5)
+ticket2 = jack.tickets.create!(subject: "random task 2", age: 3)
+ticket3 = jack.tickets.create!(subject: "random task 3", age: 2)
