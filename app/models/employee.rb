@@ -9,4 +9,15 @@ class Employee < ApplicationRecord
     #could incorporate an 'if' statement here to account for when people don't have any tickets assigned to them
     tickets.order(:age).last.subject
   end
+
+  def add_ticket(ticket)
+    if !tickets.include?(ticket)
+      tickets << ticket
+    else
+    end
+  end
+
+  def order_tickets
+    tickets.order(:age).reverse
+  end
 end
